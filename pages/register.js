@@ -22,7 +22,10 @@ const Register = () => {
       body: JSON.stringify(values),
     };
 
-    await fetch("http://localhost:3000/api/auth/signup", options)
+    await fetch(
+      "https://next-auth-example-three-alpha.vercel.app/api/auth/signup",
+      options
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log("registered successfully");

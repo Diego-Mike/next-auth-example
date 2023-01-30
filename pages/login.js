@@ -40,11 +40,15 @@ const Login = () => {
   });
 
   const handleGoogleSignIn = async () => {
-    signIn("google", { callbackUrl: "http://localhost:3000/" });
+    signIn("google", {
+      callbackUrl: "https://next-auth-example-three-alpha.vercel.app/",
+    });
   };
 
   const handleGithubSignIn = async () => {
-    signIn("github", { callbackUrl: "http://localhost:3000/" });
+    signIn("github", {
+      callbackUrl: "https://next-auth-example-three-alpha.vercel.app/",
+    });
   };
 
   return (
